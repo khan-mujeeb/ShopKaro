@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "123727629184",
+    "project_id": "shopkaro-59925",
+    "storage_bucket": "shopkaro-59925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123727629184:android:adc0b082515f0bb0e84f65",
+        "android_client_info": {
+          "package_name": "com.example.shopkaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123727629184-0rslnf5j6h547lrivsimvld9pfnd1ce1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfDfE4Ew6nFRzhixqzWChgkx_di0gfq4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123727629184-0rslnf5j6h547lrivsimvld9pfnd1ce1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
