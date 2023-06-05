@@ -12,7 +12,7 @@
         android:theme="@style/Theme.ShopKaro"
         tools:targetApi="31">
         <activity
-            android:name=".LoginRegisterActivity"
+            android:name=".activites.LoginRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".activites.MainActivity"

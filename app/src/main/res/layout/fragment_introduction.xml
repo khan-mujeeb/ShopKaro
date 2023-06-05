@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_texture_left"
+        app:layout_constraintBottom_toBottomOf="@id/leftTextture"
+        app:layout_constraintDimensionRatio="1:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftTextture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftOfCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightOfCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topOfCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomOfCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ellips"
+        app:layout_constraintTop_toTopOf="@id/topOfCircle"
+        app:layout_constraintEnd_toEndOf="@id/rightOfCircle"
+        app:layout_constraintStart_toStartOf="@id/leftOfCircle"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/bottomOfCircle"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rightAddress"
+        android:textAlignment="center"
+        style="@style/h4"
+        app:layout_constraintTop_toTopOf="@id/leftTextture"
+        app:layout_constraintStart_toStartOf="@id/leftOfCircle"
+        app:layout_constraintEnd_toEndOf="@id/rightOfCircle"
+        />
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/qulity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qulity"
+        style="@style/h2"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintStart_toStartOf="@id/leftOfCircle"
+        app:layout_constraintEnd_toEndOf="@id/rightOfCircle"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        style="@style/blueButtonStyle"
+        app:layout_constraintStart_toStartOf="@id/leftOfCircle"
+        app:layout_constraintEnd_toEndOf="@id/rightOfCircle"
+        app:layout_constraintTop_toBottomOf="@id/qulity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_texture_right"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
